@@ -13,6 +13,7 @@ class MCPRequest(BaseModel):
 # ----- Endpoint -----
 @app.post("/mcp")
 def handle_mcp(req: MCPRequest):
+    """Handles MCP requests for getting time and adding numbers."""
     if req.method == "get_time":
         return {"result": datetime.now().isoformat()}
 
