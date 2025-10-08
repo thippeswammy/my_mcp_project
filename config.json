@@ -1,0 +1,12 @@
+{
+  "name": "My Simple MCP Server",
+  "version": "1.0.0",
+  "methods": {
+    "get_time": {
+      "description": "Returns the current time as an ISO string"
+    },
+    "add_numbers": {
+      "description": "Adds two numbers together. Params: {a: number, b: number}"
+    }
+  }
+}
